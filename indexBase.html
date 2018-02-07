@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: black;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("a").click(function(){
+		console.log(this.name);
+		var ficha = this.name;
+		console.log(ficha);
+		var endereco = "pastas/".concat(ficha,"/index.html");
+		console.log(endereco);
+        $("#texto").load(endereco);
+    });
+});
+</script>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+   <h1>Lista de Processos HSBC</h1>
+</header>
+  
+<nav>
+  <ul>
+      <li><a href='#' name='M001315_00'>M001315_00</a></li>
+      <li><a href='#' name='M001379_00'>M001379_00</a></li>
+      <li><a href='#' name='M001614_00'>M001614_00</a></li>
+  </ul>
+</nav>
+
+<article>
+  
+  <div id="texto">
+	<h2>Clique na ficha ao lado para visualizar o andamento e arquivos vinculados ao processo.</h2>
+  </div>
+</article>
+
+<footer>Copyright &copy; ersan.com.br</footer>
+
+</div>
+
+</body>
+</html>

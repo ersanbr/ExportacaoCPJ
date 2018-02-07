@@ -618,8 +618,8 @@ public class Principal extends javax.swing.JFrame {
                 rs = stmt.getResultSet();
 
                 while (rs.next()) {
-                    String caminhoPasta = "C://HSBC//pastas/" + f.arquivo + f.ficha + "_0" + f.incidente;
-                    String caminhoPastaHtml = "file://c:/HSBC/pastas/" + f.arquivo + f.ficha + "_0" + f.incidente;
+                    String caminhoPasta = "C://ExportacaoCPJ//pastas/" + f.arquivo + f.ficha + "_0" + f.incidente;
+                    String caminhoPastaHtml = "pastas/" + f.arquivo + f.ficha + "_0" + f.incidente;
                     String andamento = "";
                     new File(caminhoPasta).mkdir();
                     System.out.println("Criando Pasta: " + rs.getString(1) + rs.getString(2) + "_0" + rs.getString(3));
