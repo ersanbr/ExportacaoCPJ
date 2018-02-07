@@ -3,9 +3,9 @@ Ferramenta de exportação para HTML dos processos, andamentos e documentos cada
 
 A partir de uma tabela chave denominada "ficha" são realizadas consultas e um árvore de diretório é criada, onde cada diretório é nomeado com a respectiva ficha e contém um arquivo index.html com informações básicas do processo, andamentos e link para os arquivos anexados aos andamentos, os quais também estão contidos dentro da sua respectiva pasta.
 
-Para navegar entre as pastas criei o arquivo indexBase.html
-
 O programa de exportação extrai os andamentos e arquivos para a pasta C:\ExportacaoCPJ\pastas\
+
+Para navegar entre as pastas criei o arquivo indexBase.html, este arquivo deve estar na pasta C:\ExportacaoCPJ
 
 A tabela "ficha" deve ser criado conforme abaixo:
 
