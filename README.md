@@ -5,7 +5,7 @@ A partir de uma tabela chave denominada "ficha" são realizadas consultas e um �
 
 O programa de exportação extrai os andamentos e arquivos para a pasta C:\ExportacaoCPJ\pastas\
 
-Para navegar entre as pastas criei o arquivo indexBase.html, este arquivo deve estar na pasta C:\ExportacaoCPJ
+Para navegar entre as pastas criei o arquivo indexBase.html, este arquivo deve estar na pasta C:\ExportacaoCPJ, para seu bom funcionamento é recomendável a utilização do navegador Firefox.
 
 A tabela "ficha" deve ser criado conforme abaixo:
 
